@@ -1,0 +1,5 @@
+install.packages("reshape2")
+install.packages("ParBayesianOptimization")
+install.packages("rBayesianOptimization")
+install.packages("doParallel")
+install.packages("data.table")
