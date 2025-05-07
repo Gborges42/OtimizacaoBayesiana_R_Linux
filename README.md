@@ -32,13 +32,13 @@ Para mais detalhes, consulte a documentação oficial do CRAN:
 2.  Extraia o conteúdo para o diretório `home` do seu usuário:
 
 ``` bash
-unzip calibration-dssat-main.zip calibration-dssat-main
+unzip OtimizacaoBayesiana_R_Linux.zip OtimizacaoBayesiana_R_Linux
 ```
 
 4.  Conceda permissões de leitura, escrita e execução para todos os arquivos:
 
 ``` bash
-sudo chmod -R 777 calibration-dssat-main/
+sudo chmod -R 777 OtimizacaoBayesiana_R_Linux/
 ```
 
 > **Nota:** Após cada extração do arquivo `.zip`, será necessário redefinir as permissões.
@@ -61,7 +61,7 @@ sudo apt install cmake
 2.  Navegue até o diretório extraído:
 
 ``` bash
-cd calibration-dssat-main
+cd OtimizacaoBayesiana_R_Linux
 ```
 
 3.  Execute o script para instalar os pacotes necessários:
@@ -78,9 +78,9 @@ cd calibration-dssat-main
 
 ## Etapa 6: Executar a Aplicação
 
-> **Nota:** Certifique-se de estar dentro do diretório cd `calibration-dssat-main`
+> **Nota:** Certifique-se de estar dentro do diretório cd `OtimizacaoBayesiana_R_Linux`
 
-1.  No terminal, estando no diretório `calibration-dssat-main`, execute o seguinte comando para iniciar a aplicação:
+1.  No terminal, estando no diretório `OtimizacaoBayesiana_R_Linux`, execute o seguinte comando para iniciar a aplicação:
 
 ``` bash
 ./Run.sh
