@@ -62,10 +62,18 @@ runSimulationBaye = function(arq.config) {
   mensagem <- sprintf("*******************************************************\n** Iniciando o processo de otimização. Tempo: %s\n", tempo_inicio)
   cat(mensagem, file = logfile, append = TRUE)
   
-  # Preparando ambiente para paralelização
-  num_cores <- min(detectCores() - 1, 3)
-  cl <- makeCluster(num_cores)
-  registerDoParallel(cl)
+  if(tolower(input$paralelo) == "true"){
+    asParallel = TRUE
+    
+    # Preparando ambiente para paralelização
+    num_cores <- max(input$cores, 1)
+    cl <- makeCluster(num_cores)
+    registerDoParallel(cl)
+    
+  }else{
+    asParallel = FALSE
+  }
+  
   
   # Realizando otimização bayesiana
   opt_result <- bayesOpt(
@@ -100,7 +108,7 @@ runSimulationBaye = function(arq.config) {
     iters.k = iters.k,
     acq = acq,
     verbose = 2
-    ,parallel = TRUE
+    ,parallel = asParallel
   )
   
   # Salvando os resultados obtidos na calibração

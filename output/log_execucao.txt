@@ -308,3 +308,5 @@ Rodando Simulação para os valores: 34.74 2 11.38 15 5 - Valor do RMSE para rod
 Rodando Simulação para os valores: 36.41 2.33 11.37 15 5 - Valor do RMSE para rodada: 6.36
 Rodando Simulação para os valores: 31.8 5.05 20 16 5.38 - Valor do RMSE para rodada: 6.92
 Rodando Simulação para os valores: 31.49 4.78 20 15 5 - Valor do RMSE para rodada: 6.9
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-13 06:41:32.163558
