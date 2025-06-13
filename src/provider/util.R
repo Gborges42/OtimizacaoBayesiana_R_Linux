@@ -103,15 +103,18 @@ calcular_tempo_dec <- function(start_time){
 
 #===============================================#
 # Função que salva os resultados da otimização
-salvar_resultados_bo <- function(resultado_bo, caminho_arquivo) {
+salvar_resultados_bo <- function(resultado_bo, caminho_output, valoresSufixo) {
   # Salvando o objeto RDS em completo
-  saveRDS(resultado_bo, file = caminho_arquivo)
+  rdsFileDir = sprintf("%s/bayesiana_opt_result_%s_%s.rds", caminho_output, valoresSufixo[1], valoresSufixo[2])
+  saveRDS(resultado_bo, file = rdsFileDir)
   
   # Salvando todas as rodadas
   rodadas = resultado_bo$scoreSummary
+  rodadasFileDir = sprintf("%s/todas_rodadas_%s_%s.csv", caminho_output, valoresSufixo[1], valoresSufixo[2])
   fwrite(rodadas, "output/todas_rodadas.csv")
   
   melhor_res = rodadas[Score == max(rodadas$Score)]
+  melhor_resFileDir = sprintf("%s/melhor_resultado_%s_%s.csv", caminho_output, valoresSufixo[1], valoresSufixo[2])
   fwrite(melhor_res, "output/melhor_resultado.csv")
 }
 #===============================================#

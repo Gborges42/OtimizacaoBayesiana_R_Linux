@@ -37,8 +37,8 @@ scoringFunction <- function(paramSim, inputList) {
 
 #===============================================#
 # Função que configura e ativa a otimização bayesiana
-runSimulationBaye = function(arq.config) {
-  
+runSimulationBaye = function(combinacao, arq.config) {
+
   # Lendo o arquivo de configuração para adquirir o input
   input = config.treatment(arq.config)
   
@@ -46,8 +46,8 @@ runSimulationBaye = function(arq.config) {
   bounds = load.limites(input)
   
   # Destacando as variáveis de configuração
-  initPoints = as.integer(input$initPoints)
-  iters.n = as.integer(input$iters.n)
+  initPoints = as.integer(combinacao["initPoints"])
+  iters.n = as.integer(combinacao["iters.n"])
   iters.k = as.integer(input$iters.k)
   acq = input$acq
   
@@ -62,6 +62,7 @@ runSimulationBaye = function(arq.config) {
   mensagem <- sprintf("*******************************************************\n** Iniciando o processo de otimização. Tempo: %s\n", tempo_inicio)
   cat(mensagem, file = logfile, append = TRUE)
   
+  # Configuração em Paralelo
   if(tolower(input$paralelo) == "true"){
     asParallel = TRUE
     
@@ -73,7 +74,6 @@ runSimulationBaye = function(arq.config) {
   }else{
     asParallel = FALSE
   }
-  
   
   # Realizando otimização bayesiana
   opt_result <- bayesOpt(
@@ -111,8 +111,11 @@ runSimulationBaye = function(arq.config) {
     ,parallel = asParallel
   )
   
+  # criando valores sufixo
+  valoresSufixo = c(as.character(initPoints), as.character(iters.n))
+  
   # Salvando os resultados obtidos na calibração
-  salvar_resultados_bo(opt_result, "output/bayesiana_opt_result.rds")
+  salvar_resultados_bo(opt_result, input$outputDir, valoresSufixo)
   
   # Salvar log do fim do programa
   tempo_decorrido = calcular_tempo_dec(start_time)
