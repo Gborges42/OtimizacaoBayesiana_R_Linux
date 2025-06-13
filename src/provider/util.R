@@ -111,11 +111,11 @@ salvar_resultados_bo <- function(resultado_bo, caminho_output, valoresSufixo) {
   # Salvando todas as rodadas
   rodadas = resultado_bo$scoreSummary
   rodadasFileDir = sprintf("%s/todas_rodadas_%s_%s.csv", caminho_output, valoresSufixo[1], valoresSufixo[2])
-  fwrite(rodadas, "output/todas_rodadas.csv")
+  fwrite(rodadas, rodadasFileDir)
   
   melhor_res = rodadas[Score == max(rodadas$Score)]
   melhor_resFileDir = sprintf("%s/melhor_resultado_%s_%s.csv", caminho_output, valoresSufixo[1], valoresSufixo[2])
-  fwrite(melhor_res, "output/melhor_resultado.csv")
+  fwrite(melhor_res, melhor_resFileDir)
 }
 #===============================================#
 

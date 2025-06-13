@@ -6,6 +6,7 @@ load.packages = function() {
   require(doParallel)
   require(data.table)
   require(compiler)
+  require(parallel)
 }
 #===============================================#
 
