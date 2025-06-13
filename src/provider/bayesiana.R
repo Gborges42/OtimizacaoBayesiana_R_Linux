@@ -66,7 +66,7 @@ runSimulationBaye = function(arq.config) {
     asParallel = TRUE
     
     # Preparando ambiente para paralelização
-    num_cores <- max(input$cores, 1)
+    num_cores <- max(as.integer(input$cores), 1)
     cl <- makeCluster(num_cores)
     registerDoParallel(cl)
     
