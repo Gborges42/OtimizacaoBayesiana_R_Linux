@@ -1,4 +1,50 @@
 #===============================================#
+#Função objetivo, retorna o valor a ser minimizado
+resultadosRMSEs <- function(simulacao, paramSim, inputList) {
+  
+  #==========================================================================#
+  # Executando SSE 
+  run = simulationFunction(paramSim, gsub(":", "", sprintf("iteration_%s", format(Sys.time(), "%H:%M:%OS3"))), inputList)
+  run$Origem = simulacao
+  return(run)
+  # Obtendo os valores de RMSE
+  calibration = as.character(inputList$calibration)
+  
+  # Calculando RMSE individuais
+  rmse.list = lapply(calibration, function(calibration, evaluateData){
+    
+    # Obtendo index variaveis de calibracao
+    variable.index = grep(paste0(calibration, collapse = "|"), names(evaluateData))
+    
+    # Obtendo variaveis simuladas
+    calibrationData = evaluateData[, ..variable.index]
+    calibrationData[calibrationData == -99] = NA
+    
+    # Fazendo RMSE da variável
+    rmse <- sqrt(mean((calibrationData[[1]] - calibrationData[[2]])^2))
+    
+    return(c(calibration, rmse))
+  }, run)
+  
+  # Iniciando o data.table
+  dt = data.table("Origem" = simulacao, t(paramSim)) 
+  
+  # Inserindo RMSEs
+  for(rmse in rmse.list){
+    dt[1, sprintf("RSME_%s", rmse[1])] = round(as.numeric(rmse[2]), 3)
+  }
+  
+  # Inserindo RMSE médio
+  # Remover a primeira string de cada concatenação, mantendo a segunda
+  resultados <- sapply(rmse.list, function(x) x[2])
+  # Média RMSE
+  dt$RMSE_med = round(mean(unlist(as.numeric(resultados))), 3)
+  
+  return(dt)
+}
+
+
+#===============================================#
 # Lê os limites das variáveis a serem calibradas
 load.limites <- function(input){
   

@@ -19,11 +19,9 @@ filesDssat = function(dssatFile, experimentDirectory, simulationDirectory) {
 #===============================================#
 # Funcao responsavel por criar os diretorios referentes a execucao das rodadas
 createSimulationDirectories = function(paramSim, templateId, inputList) {
+  
   # Obtendo diretorio de execucao
   dirRun = ".//Runs"
-
-  # Limpando diretorio de execucao
-  unlink(dirRun, recursive = T)
 
   # Indices da matrix de multiplicacao
   matrix.index = 1
@@ -64,6 +62,7 @@ createSimulationDirectories = function(paramSim, templateId, inputList) {
 #===============================================#
 # Funcao responsavel por executar o dssat
 executeDssat = function(simulationDirectory, dssatFile, model) {
+  
   # Definindo ponto de retorno
   homeDirectory = getwd()
   setwd(simulationDirectory)

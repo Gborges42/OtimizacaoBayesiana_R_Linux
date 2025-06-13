@@ -1,0 +1,310 @@
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:08:42.109798
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:11:31.864028
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:13:38.31639
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:14:59.927458
+*******************************************************
+** Fim do processo de otimização.
+** Tempo decorrido:  S: 8
+
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:16:41.00408
+*******************************************************
+** Fim do processo de otimização.
+** Tempo decorrido:  S: 42
+
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:17:42.028659
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:18:00.981874
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:18:21.11292
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:18:37.976573
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 20:20:54.592272
+Rodando Simulação para os valores: 17.79 2.51 18.72 16.18 17.19 - Valor do RMSE para rodada: 19.46
+Rodando Simulação para os valores: 45.29 4.73 10.84 19.29 23.04 - Valor do RMSE para rodada: 13.5
+Rodando Simulação para os valores: 28.83 2.38 18.07 30.89 24.97 - Valor do RMSE para rodada: 10.36
+Rodando Simulação para os valores: 33.86 8.25 11.92 36.91 7.17 - Valor do RMSE para rodada: 9.64
+Rodando Simulação para os valores: 23.27 3.16 5.05 39.14 16.06 - Valor do RMSE para rodada: 16.52
+Rodando Simulação para os valores: 37.27 4.01 15.45 17.73 11.69 - Valor do RMSE para rodada: 7.55
+Rodando Simulação para os valores: 48.98 6.56 16.81 20.77 26.49 - Valor do RMSE para rodada: 21.67
+Rodando Simulação para os valores: 41 9.96 6.09 28.04 21.05 - Valor do RMSE para rodada: 11.14
+Rodando Simulação para os valores: 30.53 6.22 14.68 32.12 29.79 - Valor do RMSE para rodada: 9.02
+Rodando Simulação para os valores: 20.16 9.3 17.62 36.14 18.92 - Valor do RMSE para rodada: 14.87
+Rodando Simulação para os valores: 21.08 3.56 6.92 21.27 9.81 - Valor do RMSE para rodada: 20.56
+Rodando Simulação para os valores: 26.9 5.14 9.88 29.19 18.09 - Valor do RMSE para rodada: 11.17
+Rodando Simulação para os valores: 42.79 7.65 9.3 16.6 21.71 - Valor do RMSE para rodada: 10.79
+Rodando Simulação para os valores: 36.73 3.61 8.26 34.22 27.83 - Valor do RMSE para rodada: 9.14
+Rodando Simulação para os valores: 15 9.09 19.82 25.83 10.01 - Valor do RMSE para rodada: 17.83
+Rodando Simulação para os valores: 43.88 5.51 7.3 23.58 13.29 - Valor do RMSE para rodada: 11.71
+Rodando Simulação para os valores: 50.56 5.7 13 38.01 26.16 - Valor do RMSE para rodada: 24.28
+Rodando Simulação para os valores: 51.86 7.04 11.25 32.91 14.61 - Valor do RMSE para rodada: 24.12
+Rodando Simulação para os valores: 31.15 7.57 15.64 23.93 5.51 - Valor do RMSE para rodada: 7.19
+Rodando Simulação para os valores: 54.95 8.76 13.42 27 7.69 - Valor do RMSE para rodada: 28.41
+Rodando Simulação para os valores: 31.76 10 20 15 19.34 - Valor do RMSE para rodada: 6.84
+Rodando Simulação para os valores: 34.51 5.99 5 15 22.52 - Valor do RMSE para rodada: 9.7
+Rodando Simulação para os valores: 35.15 10 20 15 5 - Valor do RMSE para rodada: 8.64
+Rodando Simulação para os valores: 31.73 5.34 20 15 11.27 - Valor do RMSE para rodada: 6.84
+Rodando Simulação para os valores: 33.06 7.61 14.74 15 16.48 - Valor do RMSE para rodada: 6.23
+*******************************************************
+** Fim do processo de otimização.
+** Tempo decorrido:  S: 50
+
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 22:27:41.633895
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 22:28:41.468434
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 22:40:31.126287
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 22:43:49.355785
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 22:48:01.379611
+Rodando Simulação para os valores: 41.23 3.21 19.57 16.36 22.27 - Valor do RMSE para rodada: 12.48
+Rodando Simulação para os valores: 40.16 4.39 16.43 17.54 7.74 - Valor do RMSE para rodada: 10.57
+Rodando Simulação para os valores: 45.84 7.82 11.05 15.64 19.37 - Valor do RMSE para rodada: 14.46
+Rodando Simulação para os valores: 43.72 8.02 18.54 39.13 9.31 - Valor do RMSE para rodada: 20.31
+Rodando Simulação para os valores: 50.4 6.51 17.92 38.5 28.9 - Valor do RMSE para rodada: 27.07
+Rodando Simulação para os valores: 35.77 5.69 7.12 25.4 27.92 - Valor do RMSE para rodada: 7.43
+Rodando Simulação para os valores: 15.18 8.67 15.1 18.93 26.6 - Valor do RMSE para rodada: 22.07
+Rodando Simulação para os valores: 17.55 3.2 14.47 24.22 11.69 - Valor do RMSE para rodada: 19.85
+Rodando Simulação para os valores: 52.23 7.59 9.28 28.28 23.18 - Valor do RMSE para rodada: 23.06
+Rodando Simulação para os valores: 54.97 4.8 13.61 37.32 18.48 - Valor do RMSE para rodada: 29.08
+Rodando Simulação para os valores: 37.52 9.11 7.55 22.48 17.42 - Valor do RMSE para rodada: 8.26
+Rodando Simulação para os valores: 28.2 9.32 6.19 23.43 5.68 - Valor do RMSE para rodada: 11.52
+Rodando Simulação para os valores: 48.55 2.6 9.78 32.1 10.33 - Valor do RMSE para rodada: 18.48
+Rodando Simulação para os valores: 22.01 3.65 10.3 26.59 25.66 - Valor do RMSE para rodada: 16.16
+Rodando Simulação para os valores: 25.87 2.11 12.06 36.16 7.42 - Valor do RMSE para rodada: 13.38
+Rodando Simulação para os valores: 19.58 6.1 5.04 20.89 13.67 - Valor do RMSE para rodada: 23.09
+Rodando Simulação para os valores: 24.26 7.13 17.5 29.53 24.33 - Valor do RMSE para rodada: 11.39
+Rodando Simulação para os valores: 34.47 5.3 15.52 33.97 16.18 - Valor do RMSE para rodada: 9.44
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 22:48:55.189936
+Rodando Simulação para os valores: 32.68 3.94 15.76 27.42 18.03 - Valor do RMSE para rodada: 8.01
+Rodando Simulação para os valores: 27.79 8.55 14.96 16.18 29.27 - Valor do RMSE para rodada: 8.84
+Rodando Simulação para os valores: 26.51 8.03 10.35 39.35 5.29 - Valor do RMSE para rodada: 12.45
+Rodando Simulação para os valores: 46.13 3.56 6.28 24.37 12.36 - Valor do RMSE para rodada: 13.14
+Rodando Simulação para os valores: 51.5 6.39 13.61 17.05 26.47 - Valor do RMSE para rodada: 21.69
+Rodando Simulação para os valores: 42.4 8.85 12.49 17.89 12.57 - Valor do RMSE para rodada: 12.21
+Rodando Simulação para os valores: 39.47 4.61 19.76 19.81 22.93 - Valor do RMSE para rodada: 12.15
+Rodando Simulação para os valores: 30.19 9.56 18.5 35.87 24.85 - Valor do RMSE para rodada: 9.95
+Rodando Simulação para os valores: 43.24 9.66 16.89 26.1 22.33 - Valor do RMSE para rodada: 17.14
+Rodando Simulação para os valores: 49.22 6.7 6.88 37.81 6.36 - Valor do RMSE para rodada: 20.01
+Rodando Simulação para os valores: 23.57 5.32 18.2 31.16 8.12 - Valor do RMSE para rodada: 12.62
+Rodando Simulação para os valores: 22.58 8 5.47 21.91 10.05 - Valor do RMSE para rodada: 18.36
+Rodando Simulação para os valores: 15.42 5.79 7.51 33.23 9.38 - Valor do RMSE para rodada: 22.86
+Rodando Simulação para os valores: 20.95 5.07 17.15 20.85 16.37 - Valor do RMSE para rodada: 14.56
+Rodando Simulação para os valores: 17.99 2.67 8.77 29.46 26.14 - Valor do RMSE para rodada: 21.13
+Rodando Simulação para os valores: 54.43 7.44 12.79 31.27 18.8 - Valor do RMSE para rodada: 27.5
+Rodando Simulação para os valores: 36.78 3.18 14.31 22.77 13.75 - Valor do RMSE para rodada: 7.82
+Rodando Simulação para os valores: 37.34 7.1 8.71 27.6 15.78 - Valor do RMSE para rodada: 8.5
+Rodando Simulação para os valores: 34.01 4.1 11.1 34.34 20.09 - Valor do RMSE para rodada: 8.88
+Rodando Simulação para os valores: 48.65 2.03 9.56 36.67 28.31 - Valor do RMSE para rodada: 18.89
+Rodando Simulação para os valores: 33.23 2.56 5 15.54 5 - Valor do RMSE para rodada: 10.58
+Rodando Simulação para os valores: 35.75 2 5 15 5 - Valor do RMSE para rodada: 9.14
+Rodando Simulação para os valores: 34.73 2.2 5 15 5.68 - Valor do RMSE para rodada: 9.78
+Rodando Simulação para os valores: 34.81 2 5.21 15 5.66 - Valor do RMSE para rodada: 9.57
+Rodando Simulação para os valores: 37.59 2 5 15.86 8.44 - Valor do RMSE para rodada: 8.34
+*******************************************************
+** Fim do processo de otimização.
+** Tempo decorrido:  S: 13
+
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-11 22:58:04.654578
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-12 10:16:27.328271
+Rodando Simulação para os valores: 20.64 2.4 5.44 23.96 22.51 - Valor do RMSE para rodada: 21.95
+Rodando Simulação para os valores: 15 2.41 11.87 22.92 15.16 - Valor do RMSE para rodada: 25.09
+Rodando Simulação para os valores: 25.51 6.7 6.55 18.68 22.28 - Valor do RMSE para rodada: 15.74
+Rodando Simulação para os valores: 18.4 4.04 8.01 32.16 26.51 - Valor do RMSE para rodada: 20.18
+Rodando Simulação para os valores: 28.53 2.8 11.29 20.11 13.7 - Valor do RMSE para rodada: 10.33
+Rodando Simulação para os valores: 21.54 9.32 8.82 34.52 17.25 - Valor do RMSE para rodada: 14.93
+Rodando Simulação para os valores: 52.55 3.86 14.09 29.42 6.1 - Valor do RMSE para rodada: 24.86
+Rodando Simulação para os valores: 24.15 4.79 15.53 36.27 28.91 - Valor do RMSE para rodada: 13.49
+Rodando Simulação para os valores: 33.3 3.33 13.38 39.86 19.74 - Valor do RMSE para rodada: 10.27
+Rodando Simulação para os valores: 45.1 5.31 17.46 37.61 11.22 - Valor do RMSE para rodada: 20.12
+Rodando Simulação para os valores: 35.13 7.43 9.77 27.96 23.81 - Valor do RMSE para rodada: 7.79
+Rodando Simulação para os valores: 30.22 8.85 18.69 35.68 25.4 - Valor do RMSE para rodada: 10.05
+Rodando Simulação para os valores: 50.82 6.96 16.55 15.49 17.99 - Valor do RMSE para rodada: 22.58
+Rodando Simulação para os valores: 40.27 6.34 14.76 19.34 8.35 - Valor do RMSE para rodada: 10.59
+Rodando Simulação para os valores: 48.66 7.76 19.89 32.75 20.86 - Valor do RMSE para rodada: 25.52
+Rodando Simulação para os valores: 53.86 5.02 7.88 26.22 12.38 - Valor do RMSE para rodada: 22.85
+Rodando Simulação para os valores: 44.67 8.55 12.86 27.48 14.6 - Valor do RMSE para rodada: 16.71
+Rodando Simulação para os valores: 41.82 8.38 5.9 21.36 6.84 - Valor do RMSE para rodada: 9.9
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-12 10:16:53.958724
+Rodando Simulação para os valores: 20.33 5 18.82 20.34 19.28 - Valor do RMSE para rodada: 14.57
+Rodando Simulação para os valores: 38.46 7.88 5.97 36.09 9.57 - Valor do RMSE para rodada: 10.92
+Rodando Simulação para os valores: 24.34 9.26 12.06 39.19 10.38 - Valor do RMSE para rodada: 13.37
+Rodando Simulação para os valores: 48.86 4.27 6.57 34.58 5.38 - Valor do RMSE para rodada: 18.07
+Rodando Simulação para os valores: 30.04 3.36 19.87 28.14 15.34 - Valor do RMSE para rodada: 9.64
+Rodando Simulação para os valores: 16.98 8.24 15.19 17.35 13.69 - Valor do RMSE para rodada: 20.66
+Rodando Simulação para os valores: 53.17 9.61 16.58 30.33 26.93 - Valor do RMSE para rodada: 29.03
+Rodando Simulação para os valores: 28.9 8.78 17.85 31.8 22.73 - Valor do RMSE para rodada: 9.16
+Rodando Simulação para os valores: 36.11 2.52 14.2 37.18 22.47 - Valor do RMSE para rodada: 10.23
+Rodando Simulação para os valores: 25.22 2.89 7.57 32.52 7.13 - Valor do RMSE para rodada: 13.8
+Rodando Simulação para os valores: 41.11 5.43 9.38 38.34 17.04 - Valor do RMSE para rodada: 12.67
+Rodando Simulação para os valores: 21.71 2.03 9.98 24.12 24.36 - Valor do RMSE para rodada: 17.84
+Rodando Simulação para os valores: 45.16 7.57 5.33 27 26.03 - Valor do RMSE para rodada: 13.63
+Rodando Simulação para os valores: 43.98 5.77 17.51 28.81 20.19 - Valor do RMSE para rodada: 17.65
+Rodando Simulação para os valores: 52.06 6.31 10.26 26.12 14.57 - Valor do RMSE para rodada: 22.38
+Rodando Simulação para os valores: 39.19 6.42 8.6 16.25 29.09 - Valor do RMSE para rodada: 7.67
+Rodando Simulação para os valores: 18.92 3.98 11.33 22.82 12 - Valor do RMSE para rodada: 20.15
+Rodando Simulação para os valores: 33.61 4.69 16.05 18.13 8.03 - Valor do RMSE para rodada: 6.41
+Rodando Simulação para os valores: 50.97 9.18 13.89 19.7 27.88 - Valor do RMSE para rodada: 22.63
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-12 10:18:10.485119
+Rodando Simulação para os valores: 44.33 6.57 7.09 19.47 8.09 - Valor do RMSE para rodada: 11.64
+Rodando Simulação para os valores: 33.59 9.37 18.62 17.93 20.44 - Valor do RMSE para rodada: 7.3
+Rodando Simulação para os valores: 54.61 5.62 13.5 23.72 5.19 - Valor do RMSE para rodada: 26.42
+Rodando Simulação para os valores: 50.41 7.86 5.21 24.56 18.32 - Valor do RMSE para rodada: 18.29
+Rodando Simulação para os valores: 23.32 6.23 7.76 35.4 9.11 - Valor do RMSE para rodada: 14.82
+Rodando Simulação para os valores: 42.64 2.46 9.71 34.11 15.81 - Valor do RMSE para rodada: 12.59
+Rodando Simulação para os valores: 22.14 4.35 15.12 29.61 7.09 - Valor do RMSE para rodada: 14.04
+Rodando Simulação para os valores: 46.95 9.63 10.27 17.42 28.57 - Valor do RMSE para rodada: 16.25
+Rodando Simulação para os valores: 30.02 8.19 16.16 31.95 25.14 - Valor do RMSE para rodada: 8.9
+Rodando Simulação para os valores: 17.97 2.21 18.33 26.63 27.44 - Valor do RMSE para rodada: 17.36
+Rodando Simulação para os valores: 35.11 8.65 14.06 15.59 16.26 - Valor do RMSE para rodada: 6.71
+Rodando Simulação para os valores: 28.26 3.13 11.29 39.21 10.96 - Valor do RMSE para rodada: 12.44
+Rodando Simulação para os valores: 26.88 4.57 12.95 30.99 18.79 - Valor do RMSE para rodada: 10.95
+Rodando Simulação para os valores: 19.03 3.25 19.53 22.08 14.83 - Valor do RMSE para rodada: 16.04
+Rodando Simulação para os valores: 38.77 5.44 17.07 20.66 11.87 - Valor do RMSE para rodada: 10.35
+Rodando Simulação para os valores: 15.74 8.99 6.25 27.64 29.72 - Valor do RMSE para rodada: 24.1
+Rodando Simulação para os valores: 32.49 7.41 8.75 25.51 22.1 - Valor do RMSE para rodada: 7.59
+Rodando Simulação para os valores: 40.73 6.85 8.76 37.74 23.59 - Valor do RMSE para rodada: 12.54
+Rodando Simulação para os valores: 47.01 4.94 16.38 32.75 12.6 - Valor do RMSE para rodada: 20.63
+Rodando Simulação para os valores: 51.64 3.91 11.97 37.31 24.79 - Valor do RMSE para rodada: 24.12
+Rodando Simulação para os valores: 36.64 2 5 15 30 - Valor do RMSE para rodada: 8.75
+Rodando Simulação para os valores: 36.18 2 5 15.13 28.79 - Valor do RMSE para rodada: 8.92
+Rodando Simulação para os valores: 36.19 2 5.84 16.75 30 - Valor do RMSE para rodada: 8.16
+Rodando Simulação para os valores: 29.14 4.03 17.04 15 27.23 - Valor do RMSE para rodada: 8.14
+Rodando Simulação para os valores: 33.34 4.29 15.59 15 30 - Valor do RMSE para rodada: 6.22
+Rodando Simulação para os valores: 29.96 4.4 15.44 15 29.98 - Valor do RMSE para rodada: 8.02
+*******************************************************
+** Fim do processo de otimização.
+** Tempo decorrido:  S: 52
+
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-12 10:43:44.837632
+Rodando Simulação para os valores: 39.36 6.83 15.67 15.66 7.3 - Valor do RMSE para rodada: 9.77
+Rodando Simulação para os valores: 26.86 7.95 11.45 34.14 13.77 - Valor do RMSE para rodada: 11.03
+Rodando Simulação para os valores: 22.94 8.94 5.59 20.13 23.31 - Valor do RMSE para rodada: 18.21
+Rodando Simulação para os valores: 20.27 3.49 18.26 17.65 11.4 - Valor do RMSE para rodada: 16.22
+Rodando Simulação para os valores: 43.03 6.28 17.29 17.08 29.6 - Valor do RMSE para rodada: 14.09
+Rodando Simulação para os valores: 15.64 2.89 14.38 24.76 5.19 - Valor do RMSE para rodada: 22.05
+Rodando Simulação para os valores: 17.17 2.28 9.47 23.29 15.38 - Valor do RMSE para rodada: 23.75
+Rodando Simulação para os valores: 38.32 9.5 16.29 32.83 11 - Valor do RMSE para rodada: 12.95
+Rodando Simulação para os valores: 46.38 5.4 7.36 26.43 7.53 - Valor do RMSE para rodada: 14.64
+Rodando Simulação para os valores: 32.82 3.88 5.81 19.72 26.72 - Valor do RMSE para rodada: 9.22
+Rodando Simulação para os valores: 36.94 5.07 12.7 35.08 9.17 - Valor do RMSE para rodada: 9.95
+Rodando Simulação para os valores: 27.57 2.56 15.27 29.66 18.33 - Valor do RMSE para rodada: 10.44
+Rodando Simulação para os valores: 54.05 4.43 18.71 30.75 17.36 - Valor do RMSE para rodada: 29.63
+Rodando Simulação para os valores: 23.27 5.73 12.22 25.87 25.14 - Valor do RMSE para rodada: 13.59
+Rodando Simulação para os valores: 41.65 8.4 10.89 21.35 28.13 - Valor do RMSE para rodada: 11.27
+Rodando Simulação para os valores: 33.03 4.05 9.87 38.72 21.37 - Valor do RMSE para rodada: 9.99
+Rodando Simulação para os valores: 48.84 7.38 13.29 31.68 20.49 - Valor do RMSE para rodada: 21.61
+Rodando Simulação para os valores: 29.04 8.16 8.55 38.85 18.94 - Valor do RMSE para rodada: 11.1
+Rodando Simulação para os valores: 50.43 9.66 7.16 37.18 24.58 - Valor do RMSE para rodada: 22.3
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-12 10:44:14.104682
+Rodando Simulação para os valores: 48.18 7.77 6.22 18.33 25.52 - Valor do RMSE para rodada: 15.24
+Rodando Simulação para os valores: 32.85 2.73 9.48 26.02 8.07 - Valor do RMSE para rodada: 7.71
+Rodando Simulação para os valores: 41.58 4.88 19.75 34.22 26.63 - Valor do RMSE para rodada: 16.97
+Rodando Simulação para os valores: 40.18 5.72 8 23.1 16.69 - Valor do RMSE para rodada: 8.89
+Rodando Simulação para os valores: 44.83 6.7 14.22 31.37 20.49 - Valor do RMSE para rodada: 17.56
+Rodando Simulação para os valores: 35.43 9.18 16.27 16.75 12.06 - Valor do RMSE para rodada: 7.39
+Rodando Simulação para os valores: 28.73 6.14 18.86 37.21 24.66 - Valor do RMSE para rodada: 10.86
+Rodando Simulação para os valores: 51.57 5.24 13.24 39.64 29.93 - Valor do RMSE para rodada: 25.55
+Rodando Simulação para os valores: 50.33 4.2 18.34 38.71 15.37 - Valor do RMSE para rodada: 26.24
+Rodando Simulação para os valores: 23.78 9.77 11.86 15.77 23.15 - Valor do RMSE para rodada: 14.52
+Rodando Simulação para os valores: 53.07 3.27 15.02 31.2 22.37 - Valor do RMSE para rodada: 26.07
+Rodando Simulação para os valores: 45.84 8.26 7.5 29.31 5.75 - Valor do RMSE para rodada: 15.5
+Rodando Simulação para os valores: 30.37 6.83 17.74 35.65 14.72 - Valor do RMSE para rodada: 9.85
+Rodando Simulação para os valores: 17.36 2.38 9.59 33.54 17.69 - Valor do RMSE para rodada: 20.72
+Rodando Simulação para os valores: 38.73 2.97 13.53 24.37 27.93 - Valor do RMSE para rodada: 9.08
+Rodando Simulação para os valores: 25.3 3.77 15.64 28.6 19.43 - Valor do RMSE para rodada: 11.47
+Rodando Simulação para os valores: 16.54 4.5 11.6 21.65 13.74 - Valor do RMSE para rodada: 23.17
+Rodando Simulação para os valores: 34.66 8.47 6.72 19.82 6.91 - Valor do RMSE para rodada: 7.91
+Rodando Simulação para os valores: 20.27 9.47 10.27 20.75 10.57 - Valor do RMSE para rodada: 18.27
+Rodando Simulação para os valores: 22 7.29 5.24 26.93 9.43 - Valor do RMSE para rodada: 17.99
+Rodando Simulação para os valores: 33.28 2 5 15.25 30 - Valor do RMSE para rodada: 10.74
+Rodando Simulação para os valores: 34.55 2 5 15 30 - Valor do RMSE para rodada: 9.89
+Rodando Simulação para os valores: 34.22 2 5 15.02 30 - Valor do RMSE para rodada: 10.14
+Rodando Simulação para os valores: 37.95 2.3 14.22 15 5.37 - Valor do RMSE para rodada: 7.08
+Rodando Simulação para os valores: 37.57 2 14.04 15 5 - Valor do RMSE para rodada: 6.87
+Rodando Simulação para os valores: 37.4 2 13.67 16.04 5 - Valor do RMSE para rodada: 6.74
+Rodando Simulação para os valores: 32.27 3.3 19.29 16.85 6.47 - Valor do RMSE para rodada: 7.14
+Rodando Simulação para os valores: 32.81 4.17 19.63 17.63 5 - Valor do RMSE para rodada: 7.26
+Rodando Simulação para os valores: 30.87 3.55 20 15 5 - Valor do RMSE para rodada: 7.1
+Rodando Simulação para os valores: 38.14 10 8.5 15 30 - Valor do RMSE para rodada: 8.52
+Rodando Simulação para os valores: 35.66 9.75 6.85 15 30 - Valor do RMSE para rodada: 9.13
+Rodando Simulação para os valores: 42.2 9.93 8.72 15 30 - Valor do RMSE para rodada: 10.56
+Rodando Simulação para os valores: 38.13 2 5 15 5 - Valor do RMSE para rodada: 8.31
+Rodando Simulação para os valores: 37.63 2.69 5 15.22 5 - Valor do RMSE para rodada: 8.54
+Rodando Simulação para os valores: 36.47 2 5.39 16.74 5 - Valor do RMSE para rodada: 8.21
+*******************************************************
+** Fim do processo de otimização.
+** Tempo decorrido:  M: 2 S: 9
+
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-12 10:49:37.848573
+Rodando Simulação para os valores: 20.33 8.95 8.25 23.15 25.41 - Valor do RMSE para rodada: 18.77
+Rodando Simulação para os valores: 45.59 6.96 5.62 37.3 7.11 - Valor do RMSE para rodada: 15.71
+Rodando Simulação para os valores: 40.58 2.63 17.08 33.72 27.31 - Valor do RMSE para rodada: 14.15
+Rodando Simulação para os valores: 51.88 4.42 19.51 24.16 24.15 - Valor do RMSE para rodada: 26.29
+Rodando Simulação para os valores: 34.06 4.93 9.12 15.45 7.66 - Valor do RMSE para rodada: 7.69
+Rodando Simulação para os valores: 48.65 9.88 5.87 38.42 18.15 - Valor do RMSE para rodada: 20.09
+Rodando Simulação para os valores: 43.26 8.16 11.11 20.34 29.63 - Valor do RMSE para rodada: 12.78
+Rodando Simulação para os valores: 53.44 8.56 9.61 27.74 14.72 - Valor do RMSE para rodada: 24.68
+Rodando Simulação para os valores: 23.62 7.31 15.03 34.38 9.83 - Valor do RMSE para rodada: 13.08
+Rodando Simulação para os valores: 32.89 3.81 7.64 31.37 27.95 - Valor do RMSE para rodada: 8.67
+Rodando Simulação para os valores: 16.56 6.14 14.01 18.44 20.7 - Valor do RMSE para rodada: 22.04
+Rodando Simulação para os valores: 29.53 9.22 12.97 39.93 19.56 - Valor do RMSE para rodada: 10.75
+Rodando Simulação para os valores: 18.13 5.79 11.85 35.71 23.56 - Valor do RMSE para rodada: 18.04
+Rodando Simulação para os valores: 26.11 5.41 10.29 26.07 16.01 - Valor do RMSE para rodada: 11.79
+Rodando Simulação para os valores: 42.84 6.68 18.56 29.88 11.76 - Valor do RMSE para rodada: 17.28
+Rodando Simulação para os valores: 38.31 4.33 16.94 17.47 5.5 - Valor do RMSE para rodada: 9.13
+Rodando Simulação para os valores: 49.63 3.5 15.57 22.47 13.69 - Valor do RMSE para rodada: 20.75
+Rodando Simulação para os valores: 28.6 3.02 18.25 26.96 16.46 - Valor do RMSE para rodada: 9.42
+Rodando Simulação para os valores: 22.63 2.16 13.55 19.01 10.7 - Valor do RMSE para rodada: 16.14
+*******************************************************
+** Iniciando o processo de otimização. Tempo: 2025-06-12 10:50:10.16709
+Rodando Simulação para os valores: 37.47 6.98 6.68 18.26 12.76 - Valor do RMSE para rodada: 7.86
+Rodando Simulação para os valores: 23.24 5.04 18.88 32.26 29.81 - Valor do RMSE para rodada: 12.94
+Rodando Simulação para os valores: 54.33 3.08 7.98 39.36 28.47 - Valor do RMSE para rodada: 25.11
+Rodando Simulação para os valores: 29.06 9.65 16.13 22.05 18.73 - Valor do RMSE para rodada: 7.25
+Rodando Simulação para os valores: 16.46 3.46 19.7 16.33 24.17 - Valor do RMSE para rodada: 20.26
+Rodando Simulação para os valores: 18.24 6.61 17.75 38.55 21.91 - Valor do RMSE para rodada: 17.15
+Rodando Simulação para os valores: 22.54 8.64 9.05 20.29 26.07 - Valor do RMSE para rodada: 16.7
+Rodando Simulação para os valores: 51.06 2.51 14.96 36.76 19.92 - Valor do RMSE para rodada: 24.61
+Rodando Simulação para os valores: 43.09 9.09 14.11 15.25 10.88 - Valor do RMSE para rodada: 13.17
+Rodando Simulação para os valores: 31.68 4.12 16.49 24.31 20.66 - Valor do RMSE para rodada: 7.61
+Rodando Simulação para os valores: 40.79 2.06 9.6 22.93 7.2 - Valor do RMSE para rodada: 8.78
+Rodando Simulação para os valores: 35.65 5.67 12.13 33.65 27.33 - Valor do RMSE para rodada: 9.1
+Rodando Simulação para os valores: 28.8 8.34 17.87 31.23 14.26 - Valor do RMSE para rodada: 9.25
+Rodando Simulação para os valores: 19.98 5.23 13.71 26.16 11.44 - Valor do RMSE para rodada: 16.54
+Rodando Simulação para os valores: 42.13 9.24 11.26 18.9 23.44 - Valor do RMSE para rodada: 11.53
+Rodando Simulação para os valores: 25.78 3.73 6.31 28.79 9.14 - Valor do RMSE para rodada: 13.74
+Rodando Simulação para os valores: 34.03 7.77 8.57 27.51 17.37 - Valor do RMSE para rodada: 7.76
+Rodando Simulação para os valores: 50.88 7.55 12.51 27.31 5 - Valor do RMSE para rodada: 23.01
+Rodando Simulação para os valores: 47.9 6.02 10.81 34 16.17 - Valor do RMSE para rodada: 19.48
+Rodando Simulação para os valores: 46.22 4.72 5.36 36.03 7.71 - Valor do RMSE para rodada: 15.43
+Rodando Simulação para os valores: 30.22 9.96 19.76 15 29.57 - Valor do RMSE para rodada: 6.59
+Rodando Simulação para os valores: 30.73 9.97 20 15 30 - Valor do RMSE para rodada: 6.61
+Rodando Simulação para os valores: 33.42 10 20 15 30 - Valor do RMSE para rodada: 7.44
+Rodando Simulação para os valores: 34.52 10 14.61 15 5 - Valor do RMSE para rodada: 6.68
+Rodando Simulação para os valores: 31.92 10 14.93 15 5 - Valor do RMSE para rodada: 6.75
+Rodando Simulação para os valores: 28.85 10 13.06 15.72 5.33 - Valor do RMSE para rodada: 9
+Rodando Simulação para os valores: 32.24 10 12.94 15 30 - Valor do RMSE para rodada: 7.3
+Rodando Simulação para os valores: 34.16 9.67 13.71 15.56 28.92 - Valor do RMSE para rodada: 6.72
+Rodando Simulação para os valores: 33.61 9.69 12.58 15.79 29.27 - Valor do RMSE para rodada: 6.9
+Rodando Simulação para os valores: 33.88 2.46 10.03 15 7.4 - Valor do RMSE para rodada: 7.74
+Rodando Simulação para os valores: 34.74 2 11.38 15 5 - Valor do RMSE para rodada: 6.76
+Rodando Simulação para os valores: 36.41 2.33 11.37 15 5 - Valor do RMSE para rodada: 6.36
+Rodando Simulação para os valores: 31.8 5.05 20 16 5.38 - Valor do RMSE para rodada: 6.92
+Rodando Simulação para os valores: 31.49 4.78 20 15 5 - Valor do RMSE para rodada: 6.9

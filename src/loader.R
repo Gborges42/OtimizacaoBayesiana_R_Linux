@@ -3,7 +3,6 @@
 load.packages = function() {
   require(reshape2)
   require(ParBayesianOptimization)
-  require(rBayesianOptimization)
   require(doParallel)
   require(data.table)
   require(compiler)
