@@ -15,7 +15,7 @@ load.functions()
 arq.config = ".//StartValues_bean.config"
 
 # Vetores com os valores desejados
-valores <- c(50) #, 100, 200, 300, 400, 500)
+valores <- c(50, 100, 200, 300, 400, 500)
 
 # Gerar todas as combinações possíveis (produto cartesiano)
 dt_combinacoes <- CJ(initPoints = valores, iters.n = valores)
