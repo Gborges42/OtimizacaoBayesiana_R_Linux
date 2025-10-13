@@ -27,16 +27,6 @@ Para mais detalhes, consulte a documentação oficial do CRAN:
 
 ## Etapa 3: Preparar o Ambiente da Aplicação
 
-### Opção clonagem do repositório com Git
-
-1. Clone o repositório usando o comando abaixo:
-
-``` bash
-git clone https://github.com/Gborges42/OtimizacaoBayesiana_R_Linux.git
-```
-
-### Opção Download direto com ZIP
-
 1.  Faça o download do arquivo `.zip` contendo o código da aplicação.
 
 2.  Extraia o conteúdo para o diretório `home` do seu usuário:
@@ -45,12 +35,10 @@ git clone https://github.com/Gborges42/OtimizacaoBayesiana_R_Linux.git
 unzip OtimizacaoBayesiana_R_Linux.zip OtimizacaoBayesiana_R_Linux
 ```
 
-### Conceda permissão
-
-3.  Conceda permissões de leitura, escrita e execução para todos os arquivos:
+4.  Conceda permissões de leitura, escrita e execução para todos os arquivos:
 
 ``` bash
-    sudo chmod -R 777 OtimizacaoBayesiana_R_Linux/
+sudo chmod -R 777 OtimizacaoBayesiana_R_Linux/
 ```
 
 > **Nota:** Após cada extração do arquivo `.zip`, será necessário redefinir as permissões.

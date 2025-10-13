@@ -10,16 +10,18 @@ scoringFunction <- function(paramSim, inputList) {
       mensagem = paste(mensagem, round(valor,2), sep = " ")
     }
     logfile <- "output/log_execucao.txt"
+    cat(mensagem, file = logfile, append = TRUE)
+    
     #==========================================================================#
     # Executando SSE 
-    run = simulationFunction(paramSim, gsub(":", "", sprintf("iteration_%s", runif(1, 10000, 99999))), inputList)
+    run = simulationFunction(paramSim, gsub(":", "", sprintf("iteration_%s", format(Sys.time(), "%H:%M:%OS3"))), inputList)
+    
     # Obtendo o valor de RMSE
     calibration = as.character(inputList$calibration)
     RMSE = evaluateDifference(run, calibration)
-    
+
     # salvando no log os resultados
-    mensagem = sprintf("%s - Valor do RMSE para rodada: %s\n",mensagem, round(RMSE, 2))
-    cat(mensagem, file = logfile, append = TRUE)
+    cat(sprintf(" - Valor do RMSE para rodada: %s\n", round(RMSE, 2)), file = logfile, append = TRUE)
     if(is.na(RMSE)){
       return(list(Score = -99))
     }else{
@@ -36,8 +38,8 @@ scoringFunction <- function(paramSim, inputList) {
 
 #===============================================#
 # Função que configura e ativa a otimização bayesiana
-runSimulationBaye = function(combinacao, arq.config) {
-
+runSimulationBaye = function(arq.config) {
+  
   # Lendo o arquivo de configuração para adquirir o input
   input = config.treatment(arq.config)
   
@@ -45,8 +47,8 @@ runSimulationBaye = function(combinacao, arq.config) {
   bounds = load.limites(input)
   
   # Destacando as variáveis de configuração
-  initPoints = as.integer(combinacao["initPoints"])
-  iters.n = as.integer(combinacao["iters.n"])
+  initPoints = as.integer(input$initPoints)
+  iters.n = as.integer(input$iters.n)
   iters.k = as.integer(input$iters.k)
   acq = input$acq
   
@@ -61,42 +63,11 @@ runSimulationBaye = function(combinacao, arq.config) {
   mensagem <- sprintf("*******************************************************\n** Iniciando o processo de otimização. Tempo: %s\n", tempo_inicio)
   cat(mensagem, file = logfile, append = TRUE)
   
-  # Configuração em Paralelo
-  if(tolower(input$paralelo) == "true"){
-    asParallel = TRUE
-    
-    # Preparando ambiente para paralelização
-    num_cores <- max(as.integer(input$cores), 1)
-    cl <- makeCluster(num_cores)
-    registerDoParallel(cl)
-    
-  }else{
-    asParallel = FALSE
-  }
-  
   # Realizando otimização bayesiana
   opt_result <- bayesOpt(
-    FUN = function(EMFL = NA, FLSH = NA, FLSD = NA, SDPM = NA, FLLF = NA, LFMAX = NA, SLAVR = NA, SIZLF = NA,  XFRT = NA, WTPSD = NA, SFDUR = NA, SDPDV = NA, PODUR = NA, SDPRO = NA, SDLIP = NA){
-      # Carregando funcoes de inicializacao
-      source(".//src//loader.R")
-      
-      # Carregando pacotes
-      load.packages()
-      
-      # Compilando funcoes
-      compile.functions()
-      
-      # Carregando funcoes compiladas
-      load.functions()
-      
-      # Arquivo de Configuração
-      # ATENÇÃO!!! Ao mudar o arquivo de configurção, será necessário mudar também dentro da função 
-      arq.config = ".//StartValues_bean.config"
-      
-      input = config.treatment(arq.config)
-      
+    FUN = function(EMFL = NA, FLSH = NA, FLSD = NA, SDPM = NA, FLLF = NA){
       # Vetor nomeado com as variáveis escolhidas, sem NAs
-      paramSim = c(EMFL = EMFL, FLSH = FLSH, FLSD = FLSD, SDPM = SDPM, FLLF = FLLF, LFMAX = LFMAX, SLAVR = SLAVR, SIZLF = SIZLF,  XFRT = XFRT, WTPSD = WTPSD, SFDUR = SFDUR, SDPDV = SDPDV, PODUR = PODUR, SDPRO = SDPRO, SDLIP = SDLIP)
+      paramSim = c(EMFL = EMFL, FLSH = FLSH, FLSD = FLSD, SDPM = SDPM, FLLF = FLLF)
       paramSim = na.omit(paramSim)
       
       scoringFunction(paramSim, input)
@@ -106,15 +77,13 @@ runSimulationBaye = function(combinacao, arq.config) {
     iters.n = iters.n,  # Iterações de otimização
     iters.k = iters.k,
     acq = acq,
-    verbose = 2
-    ,parallel = asParallel
+    verbose = 2,
+    parallel = FALSE
   )
   
-  # criando valores sufixo
-  valoresSufixo = c(as.character(initPoints), as.character(iters.n))
-  
   # Salvando os resultados obtidos na calibração
-  salvar_resultados_bo(opt_result, input$outputDir, valoresSufixo)
+  salvar_resultados_bo(opt_result, "output/bayesiana_opt_result.rds")
+  resultado_carregado <- carregar_resultados_bo("output/bayesiana_opt_result.rds")
   
   # Salvar log do fim do programa
   tempo_decorrido = calcular_tempo_dec(start_time)

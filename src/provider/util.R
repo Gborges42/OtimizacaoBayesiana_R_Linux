@@ -1,50 +1,4 @@
 #===============================================#
-#Função objetivo, retorna o valor a ser minimizado
-resultadosRMSEs <- function(simulacao, paramSim, inputList) {
-  
-  #==========================================================================#
-  # Executando SSE 
-  run = simulationFunction(paramSim, gsub(":", "", sprintf("iteration_%s", format(Sys.time(), "%H:%M:%OS3"))), inputList)
-  run$Origem = simulacao
-  return(run)
-  # Obtendo os valores de RMSE
-  calibration = as.character(inputList$calibration)
-  
-  # Calculando RMSE individuais
-  rmse.list = lapply(calibration, function(calibration, evaluateData){
-    
-    # Obtendo index variaveis de calibracao
-    variable.index = grep(paste0(calibration, collapse = "|"), names(evaluateData))
-    
-    # Obtendo variaveis simuladas
-    calibrationData = evaluateData[, ..variable.index]
-    calibrationData[calibrationData == -99] = NA
-    
-    # Fazendo RMSE da variável
-    rmse <- sqrt(mean((calibrationData[[1]] - calibrationData[[2]])^2))
-    
-    return(c(calibration, rmse))
-  }, run)
-  
-  # Iniciando o data.table
-  dt = data.table("Origem" = simulacao, t(paramSim)) 
-  
-  # Inserindo RMSEs
-  for(rmse in rmse.list){
-    dt[1, sprintf("RSME_%s", rmse[1])] = round(as.numeric(rmse[2]), 3)
-  }
-  
-  # Inserindo RMSE médio
-  # Remover a primeira string de cada concatenação, mantendo a segunda
-  resultados <- sapply(rmse.list, function(x) x[2])
-  # Média RMSE
-  dt$RMSE_med = round(mean(unlist(as.numeric(resultados))), 3)
-  
-  return(dt)
-}
-
-
-#===============================================#
 # Lê os limites das variáveis a serem calibradas
 load.limites <- function(input){
   
@@ -103,19 +57,16 @@ calcular_tempo_dec <- function(start_time){
 
 #===============================================#
 # Função que salva os resultados da otimização
-salvar_resultados_bo <- function(resultado_bo, caminho_output, valoresSufixo) {
+salvar_resultados_bo <- function(resultado_bo, caminho_arquivo) {
   # Salvando o objeto RDS em completo
-  rdsFileDir = sprintf("%s/bayesiana_opt_result_%s_%s.rds", caminho_output, valoresSufixo[1], valoresSufixo[2])
-  saveRDS(resultado_bo, file = rdsFileDir)
+  saveRDS(resultado_bo, file = caminho_arquivo)
   
   # Salvando todas as rodadas
   rodadas = resultado_bo$scoreSummary
-  rodadasFileDir = sprintf("%s/todas_rodadas_%s_%s.csv", caminho_output, valoresSufixo[1], valoresSufixo[2])
-  fwrite(rodadas, rodadasFileDir)
+  fwrite(rodadas, "output/todas_rodadas.csv")
   
   melhor_res = rodadas[Score == max(rodadas$Score)]
-  melhor_resFileDir = sprintf("%s/melhor_resultado_%s_%s.csv", caminho_output, valoresSufixo[1], valoresSufixo[2])
-  fwrite(melhor_res, melhor_resFileDir)
+  fwrite(melhor_res, "output/melhor_resultado.csv")
 }
 #===============================================#
 

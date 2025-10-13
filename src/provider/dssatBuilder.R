@@ -19,9 +19,11 @@ filesDssat = function(dssatFile, experimentDirectory, simulationDirectory) {
 #===============================================#
 # Funcao responsavel por criar os diretorios referentes a execucao das rodadas
 createSimulationDirectories = function(paramSim, templateId, inputList) {
-  
   # Obtendo diretorio de execucao
   dirRun = ".//Runs"
+
+  # Limpando diretorio de execucao
+  unlink(dirRun, recursive = T)
 
   # Indices da matrix de multiplicacao
   matrix.index = 1
@@ -62,7 +64,6 @@ createSimulationDirectories = function(paramSim, templateId, inputList) {
 #===============================================#
 # Funcao responsavel por executar o dssat
 executeDssat = function(simulationDirectory, dssatFile, model) {
-  
   # Definindo ponto de retorno
   homeDirectory = getwd()
   setwd(simulationDirectory)
@@ -147,7 +148,14 @@ runDssat = function(simulationFiles, model, dssatFile, calibration) {
     return(NA)
   }
 
-  # Carregando Evaluate.OUT
+  # Extraindo arquivo T
+  t_file = simulationFiles[grep(".T$", simulationFiles)]
+  t_file = t_file[-grep(".LST$", t_file)]
+
+  # Carregando arquivo T
+  tData = readTfile(t_file)
+
+    # Carregando Evaluate.OUT
   runEvaluate = readEvaluate(simulationDir, region)
   # Removendo diretorio de execucao temporario
   unlink(simulationDir, recursive = T)
