@@ -1,7 +1,6 @@
 #===============================================#
 #Função objetivo, retorna o valor a ser minimizado
 scoringFunction <- function(paramSim, inputList) {
-  
   # Trycatch para possíveis erros
   tryCatch({
     # Salvando os parâmetros no log
@@ -11,20 +10,19 @@ scoringFunction <- function(paramSim, inputList) {
     }
     logfile <- "output/log_execucao.txt"
     #==========================================================================#
-    # Executando SSE 
+    # Executando SSE
     run = simulationFunction(paramSim, gsub(":", "", sprintf("iteration_%s", runif(1, 10000, 99999))), inputList)
-    
     # Obtendo o valor de RMSE
     calibration = as.character(inputList$calibration)
-    RMSE = evaluateDifference(run, calibration)
+    Score = evaluateDifference(run, calibration, inputList$metodo_score)
     
     # salvando no log os resultados
-    mensagem = sprintf("%s - Valor do RMSE para rodada: %s\n",mensagem, round(RMSE, 2))
+    mensagem = sprintf("%s - Valor do Score para rodada: %s\n",mensagem, round(Score, 2))
     cat(mensagem, file = logfile, append = TRUE)
-    if(is.na(RMSE)){
+    if(is.na(Score)){
       return(list(Score = -99))
     }else{
-      return(list(Score = -(RMSE+rnorm(1,0,0.0001)))) # Queremos minimizar o erro, então retornamos negativo
+      return(list(Score = Score-rnorm(1,0,0.0001)))
     }
     
   }, error = function(e) {
@@ -59,7 +57,7 @@ runSimulationBaye = function(combinacao, arq.config) {
   logfile <- "output/log_execucao.txt"
   tempo_inicio <- # Tempo de início
   start_time <- Sys.time()
-  mensagem <- sprintf("*******************************************************\n** Iniciando o processo de otimização. Tempo: %s\n", tempo_inicio)
+  mensagem <- sprintf("*******************************************************\n** Iniciando o processo de otimização com %s. Tempo: %s\n", toupper(input$metodo_score), tempo_inicio)
   cat(mensagem, file = logfile, append = TRUE)
   
   # Configuração em Paralelo
@@ -77,7 +75,7 @@ runSimulationBaye = function(combinacao, arq.config) {
   
   # Realizando otimização bayesiana
   opt_result <- bayesOpt(
-    FUN = function(EMFL = NA, FLSH = NA, FLSD = NA, SDPM = NA, FLLF = NA){
+    FUN = function(EMFL = NA, FLSH = NA, FLSD = NA, SDPM = NA, FLLF = NA, LFMAX = NA, SLAVR = NA, SIZLF = NA,  XFRT = NA, WTPSD = NA, SFDUR = NA, SDPDV = NA, PODUR = NA, SDPRO = NA, SDLIP = NA){
       # Carregando funcoes de inicializacao
       source(".//src//loader.R")
       
@@ -97,7 +95,7 @@ runSimulationBaye = function(combinacao, arq.config) {
       input = config.treatment(arq.config)
       
       # Vetor nomeado com as variáveis escolhidas, sem NAs
-      paramSim = c(EMFL = EMFL, FLSH = FLSH, FLSD = FLSD, SDPM = SDPM, FLLF = FLLF)
+      paramSim = c(EMFL = EMFL, FLSH = FLSH, FLSD = FLSD, SDPM = SDPM, FLLF = FLLF, LFMAX = LFMAX, SLAVR = SLAVR, SIZLF = SIZLF,  XFRT = XFRT, WTPSD = WTPSD, SFDUR = SFDUR, SDPDV = SDPDV, PODUR = PODUR, SDPRO = SDPRO, SDLIP = SDLIP)
       paramSim = na.omit(paramSim)
       
       scoringFunction(paramSim, input)
@@ -112,7 +110,7 @@ runSimulationBaye = function(combinacao, arq.config) {
   )
   
   # criando valores sufixo
-  valoresSufixo = c(as.character(initPoints), as.character(iters.n))
+  valoresSufixo = c(toupper(input$metodo_score), as.character(initPoints), as.character(iters.n))
   
   # Salvando os resultados obtidos na calibração
   salvar_resultados_bo(opt_result, input$outputDir, valoresSufixo)
@@ -120,8 +118,9 @@ runSimulationBaye = function(combinacao, arq.config) {
   # Salvar log do fim do programa
   tempo_decorrido = calcular_tempo_dec(start_time)
   mensagem <- sprintf("*******************************************************
-** Fim do processo de otimização.
-** Tempo decorrido: %s\n\n", tempo_decorrido)
+** Fim do processo de otimização com %s.
+** Simulação PIniciais: %s Iterações: %s.
+** Tempo decorrido: %s\n\n", valoresSufixo[1], valoresSufixo[2], valoresSufixo[3], tempo_decorrido)
   cat(mensagem, file = logfile, append = TRUE)
 }
 #===============================================#

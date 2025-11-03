@@ -146,15 +146,7 @@ runDssat = function(simulationFiles, model, dssatFile, calibration) {
     browser()
     return(NA)
   }
-
-  # Extraindo arquivo T
-  t_file = simulationFiles[grep(".T$", simulationFiles)]
-  t_file = t_file[-grep(".LST$", t_file)]
-
-  # Carregando arquivo T
-  tData = readTfile(t_file)
-
-    # Carregando Evaluate.OUT
+  # Carregando Evaluate.OUT
   runEvaluate = readEvaluate(simulationDir, region)
   # Removendo diretorio de execucao temporario
   unlink(simulationDir, recursive = T)
